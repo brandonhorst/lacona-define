@@ -4,7 +4,7 @@ import _ from 'lodash'
 import { createElement } from 'elliptical'
 import { openURL, fetchDictionaryDefinitions } from 'lacona-api'
 
-import { Command } from 'lacona-phrases'
+import { Command, String } from 'lacona-phrases'
 import { fromPromise } from 'rxjs/observable/fromPromise'
 import { startWith } from 'rxjs/operator/startWith'
 
@@ -25,7 +25,7 @@ const Define = {
   execute (result) {
     openURL({url: `dict://${result.item}`})
   },
-  preview (result) {
+  preview (result, {observe}) {
     const data = observe(<DefinitionSource word={result.item} />)
     if (data.length) {
       const allHTML = _.map(data, 'html').join('<hr />')
