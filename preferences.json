@@ -1,0 +1,14 @@
+{
+  "defineHeader": {
+    "type": "header",
+    "examples": [
+      "define"
+    ]
+  },
+  "enableDefine": {
+    "title": "Enable Define",
+    "type": "boolean",
+    "default": true,
+    "separatorBelow": true
+  }
+}
