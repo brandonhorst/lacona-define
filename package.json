@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Lacona Command for defining dictionary words",
   "lacona": {
-    "title": "Dictionary"
+    "title": "Dictionary",
+    "customPreferences": true
   },
   "scripts": {
     "build": "babel src --out-dir lib",

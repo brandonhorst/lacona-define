@@ -32,7 +32,9 @@ const Define = {
       return {type: 'html', value: allHTML}
     }
   },
-  describe ({observe}) {
+  describe ({observe, config}) {
+    if (!config.enableDefine) return
+      
     return (
       <sequence>
         <list items={['define ', 'look up ']} />
