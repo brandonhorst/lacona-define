@@ -4,7 +4,8 @@
   "description": "Lacona Command for defining dictionary words",
   "lacona": {
     "title": "Dictionary",
-    "customPreferences": true
+    "customPreferences": true,
+    "description": "Find the definitions to English words."
   },
   "scripts": {
     "build": "babel src --out-dir lib",

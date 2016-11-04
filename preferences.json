@@ -2,7 +2,7 @@
   "defineHeader": {
     "type": "header",
     "examples": [
-      "define"
+      "define [laconic](word or phrase)"
     ]
   },
   "enableDefine": {
